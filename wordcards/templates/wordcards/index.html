@@ -17,7 +17,6 @@
 </head>
 
 <body class="text-center" background="../../static/wordcards/image/birds-simple-background.png">
-
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
         <div class="inner">
@@ -29,13 +28,14 @@
             </nav>
         </div>
     </header>
-
     <main role="main" class="inner cover">
         <h1 class="cover-heading">{{ title }}</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
-            text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">{{ intro }}</p>
+        <p class="lead">Project Crow is here for English learners to enlarge noun vocabulary, in a <strong>crow
+            style</strong>.</p>
         <p class="lead">
-            <a href="{%  url 'learn' %}" class="btn btn-lg btn-secondary">Start Learning</a>
+            <a href="{% url 'learn' %}" class="btn btn-lg btn-secondary shadow p-3 mb-5 bg-white rounded">Start
+                Learning</a>
         </p>
     </main>
 

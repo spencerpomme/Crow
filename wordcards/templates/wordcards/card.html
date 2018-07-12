@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="progressive.js"></script>
 </head>
-<body style="background-color: ghostwhite;">
+<body style="background-color: whitesmoke; opacity: 0.9;">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <h3 style="color: white">Crow</h3>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -44,9 +45,9 @@
                         card's content.</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <button type="button" class="btn btn-outline-success">I know it</button>
+                    <button type="button" class="btn btn-outline-success" id="remember">I know it</button>
                     <div style="height:5px"></div>
-                    <button type="button" class="btn btn-outline-danger">I forgot</button>
+                    <button type="button" class="btn btn-outline-danger" id="forget">I forgot</button>
                 </ul>
                 <div class="card-body">
                     <a href="#" class="card-link">Share this noun</a>
@@ -55,14 +56,15 @@
         </div>
         <div class="col"></div>
     </div>
+    <div class="row" style="height: 60px;">
+
+    </div>
     <div class="row"></div>
-    <div>
-        <div class="progress" style="position: relative; bottom:-30px">
+        <div class="progress" style="position: relative; bottom:5px">
             <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
                  aria-valuemax="100">25%
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>

@@ -12,8 +12,10 @@ def index(request):
     """
     template = loader.get_template('wordcards/index.html')
     context = {
-        'title': "wtf??",
-        'project_name': "Crow"
+        'title': "The Crow Project",
+        'project_name': "Crow",
+        'intro': "Crows are known to have an extraordinary retentive memory, \
+        or photographical memory. Scientists discovered that they are very good at binding visual object and concept behind it."
     }
     return HttpResponse(template.render(context, request))
 
@@ -39,4 +41,12 @@ def gate(request):
     pass
 
 
-def
+def finish(request):
+    """
+    View after finishing card view.
+    :param request: request
+    :return: rendered page
+    """
+    pass
+
+
