@@ -37,3 +37,6 @@ def gate(request):
     :return: rendered page
     """
     pass
+
+
+def
