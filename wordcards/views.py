@@ -30,7 +30,7 @@ def card(request):
     context = {
         'word_list_name': "Word List 1",
     }
-    return render(request, 'wordcards/card.html', context)
+    return render(request, 'wordcards/card_s1.html', context)
 
 
 def gate(request):
