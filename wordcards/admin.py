@@ -4,8 +4,8 @@ from .models import Word, Image
 
 
 class WordAdmin(admin.ModelAdmin):
-    fields = ['word_id', 'word_text', 'word_def', 'add_date', 'forget_count']
-    list_display = ('word_text', 'word_def', 'add_date', 'forget_count')
+    fields = ['word_id', 'word_text', 'word_def', 'add_date', 'forget_count', 'correct_in_row']
+    list_display = ('word_text', 'word_def', 'add_date', 'forget_count', 'correct_in_row')
 
 
 class ImageAdmin(admin.ModelAdmin):

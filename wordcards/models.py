@@ -10,8 +10,9 @@ class Word(models.Model):
     word_def = models.TextField()
     add_date = models.DateTimeField('date added')
     forget_count = models.IntegerField(default=0)
-    list_display = ('word_id', 'word_text', 'add_date', 'forget_count')
-    list_filter = ['forget_count']
+    correct_in_row = models.ImageField(default=0)
+    list_display = ('word_id', 'word_text', 'add_date', 'forget_count', 'correct_in_row')
+    list_filter = ['forget_count', 'correct_in_row']
     search_fields = ['word_text']
 
     def __str__(self):
