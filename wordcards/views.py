@@ -19,9 +19,6 @@ def index(request):
         'intro': "Crows are known to have an extraordinary retentive memory, \
         or photographical memory. Scientists discovered that they are very good at binding visual object and concept behind it."
     }
-    print(request.GET)
-    print(request.POST)
-    print(request)
     return HttpResponse(template.render(context, request))
 
 
@@ -31,9 +28,10 @@ def card(request):
     :param request: request
     :return: rendered page
     """
-    print(request.GET)
     context = {
-        'hint': "People use it to drink all kinds of beverages, and from time to time cultural symbols are printed on it.",
+        'hint': "Some sample hint text serving as a compliment to the image stimulation.",
+        'word_text': "mug",
+        'word_def': "test string: word definition placeholder.",
     }
     return render(request, 'wordcards/card_s1.html', context)
 

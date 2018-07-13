@@ -39,15 +39,16 @@
         <div class="col">
             <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 400px; height: 650px">
                 <img class="card-img-top" src="../../static/wordcards/image/mug.jpg">
-                <div class="card-body">
-                    <!--Modification starts here-->
-                    <h5 class="card-title">{{ word_text }}</h5> <!-->
-                    <p class="card-text">{{ word_def }}</p>     <!-->
+                <div class="card-body" id="recover-yes-no-placeholder">
+                    <!---->
+                    <h5 class="card-title" style="display: block;" id="shift-word">{{ word_text }}</h5>
+                    <h5 class="card-title" style="display: none;" id="shift-what">What is it?</h5>
+                    <p class="card-text" style="display: none;" id="shift-hint">{{ hint }}</p>
+                    <p class="card-text" style="display: block;" id="shift-def">{{ word_def }}</p>
                 </div>
                 <ul class="list-group list-group-flush" id="button-place-marker">
-                    <div style="height:5px"></div>
-                    <button type="button" class="btn btn-outline-primary" id="forget" onclick="changeProgress()">Next
-                    </button>
+                    <div style="height:5px" id="temp-div"></div>
+                    <button type="button" class="btn btn-outline-primary" id="forget" onclick="changeProgress()">Next</button>
                 </ul>
                 <div class="card-body">
                     <a href="#" class="card-link">Share this noun</a>

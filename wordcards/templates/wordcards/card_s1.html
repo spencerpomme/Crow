@@ -38,18 +38,18 @@
         <div class="col"></div>
         <div class="col">
             <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 400px; height: 650px">
-                <img class="card-img-top" src="../../static/wordcards/image/mug.jpg">
-                <div class="card-body">
+                <img class="card-img-top" src="../../static/wordcards/image/mug.jpg"> <!--Here need to replace with ajax requested image-->
+                <div class="card-body" id="recover-yes-no-placeholder">
                     <!-->
-                    <h5 class="card-title">What is it?</h5>
-                    <p class="card-text">{{ hint }}</p>
+                    <h5 class="card-title" style="display: none;" id="shift-word">{{ word_text }}</h5>
+                    <h5 class="card-title" style="display: block;" id="shift-what">What is it?</h5>
+                    <p class="card-text" style="display: block;" id="shift-hint">{{ hint }}</p>
+                    <p class="card-text" style="display: none;" id="shift-def">{{ word_def }}</p>
                 </div>
                 <ul class="list-group list-group-flush" id="button-place-marker">
-                    <button type="button" class="btn btn-outline-success" id="remember" onclick="remember_opt()">I know it
-                    </button>
-                    <div style="height:5px"></div>
-                    <button type="button" class="btn btn-outline-danger" id="forget" onclick="forget_opt()">Hmm...
-                    </button>
+                    <button type="button" class="btn btn-outline-success" id="remember" onclick="remember_opt()">I know it</button>
+                    <div style="height:5px" id="temp-div"></div>
+                    <button type="button" class="btn btn-outline-danger" id="forget" onclick="forget_opt()">Hmm...</button>
                 </ul>
                 <div class="card-body">
                     <a href="#" class="card-link" style="color: white;">Share this noun</a>
@@ -72,6 +72,7 @@
 
 <script src="../../static/wordcards/js/remember_opt.js"></script>
 <script src="../../static/wordcards/js/forget_opt.js"></script>
+<script src="../../static/wordcards/js/next_opt.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="885682a7-8de6-4423-ae5c-00e5ec0f967d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wordcards/static/wordcards/js/forget_opt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordcards/static/wordcards/js/remember_opt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordcards/static/wordcards/js/next_opt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/base_site.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordcards/static/wordcards/js/changeProgress.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordcards/static/wordcards/js/changeProgress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordcards/static/wordcards/js/forget_opt.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordcards/static/wordcards/js/forget_opt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordcards/static/wordcards/js/remember_opt.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordcards/static/wordcards/js/remember_opt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordcards/templates/wordcards/card_s1.html" beforeDir="false" afterPath="$PROJECT_DIR$/wordcards/templates/wordcards/card_s1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordcards/templates/wordcards/card_s2.html" beforeDir="false" afterPath="$PROJECT_DIR$/wordcards/templates/wordcards/card_s2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordcards/templates/wordcards/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wordcards/templates/wordcards/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordcards/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordcards/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordcards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordcards/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,22 +44,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crow/settings.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordcards/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordcards/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="553">
+              <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#37#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +59,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcards/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -83,8 +71,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcards/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="510">
+              <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -104,16 +92,20 @@
       <file leaf-file-name="card_s1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcards/templates/wordcards/card_s1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="46" column="81" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="81" />
+            <state relative-caret-position="550">
+              <caret line="54" column="66" lean-forward="true" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,12 +114,16 @@
       <file leaf-file-name="card_s2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcards/templates/wordcards/card_s2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="49" column="29" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="546">
+              <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -136,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forget_opt.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forget_opt.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/forget_opt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -151,8 +147,8 @@
       <file leaf-file-name="remember_opt.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/remember_opt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            <state relative-caret-position="340">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="e#111#118#1" expanded="true" />
@@ -165,11 +161,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="next_opt.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/next_opt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="changeProgress.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/changeProgress.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -189,6 +197,10 @@
     <findStrings>
       <find>button</find>
       <find>ul</find>
+      <find>card-link</find>
+      <find>card-body</find>
+      <find>card-title</find>
+      <find>card-text</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -213,15 +225,16 @@
         <option value="$PROJECT_DIR$/wordcards/templates/wordcards/image_display.html" />
         <option value="$PROJECT_DIR$/Crow/settings.py" />
         <option value="$PROJECT_DIR$/wordcards/static/wordcards/js/trigger-forget.js" />
-        <option value="$PROJECT_DIR$/wordcards/views.py" />
         <option value="$PROJECT_DIR$/wordcards/urls.py" />
         <option value="$PROJECT_DIR$/wordcards/static/wordcards/js/trigger-remember.js" />
         <option value="$PROJECT_DIR$/wordcards/static/wordcards/js/changeProgress.js" />
+        <option value="$PROJECT_DIR$/wordcards/templates/wordcards/index.html" />
+        <option value="$PROJECT_DIR$/wordcards/views.py" />
         <option value="$PROJECT_DIR$/wordcards/templates/wordcards/card_s1.html" />
         <option value="$PROJECT_DIR$/wordcards/templates/wordcards/card_s2.html" />
-        <option value="$PROJECT_DIR$/wordcards/static/wordcards/js/remember_opt.js" />
-        <option value="$PROJECT_DIR$/wordcards/templates/wordcards/index.html" />
         <option value="$PROJECT_DIR$/wordcards/static/wordcards/js/forget_opt.js" />
+        <option value="$PROJECT_DIR$/wordcards/static/wordcards/js/remember_opt.js" />
+        <option value="$PROJECT_DIR$/wordcards/static/wordcards/js/next_opt.js" />
       </list>
     </option>
   </component>
@@ -310,7 +323,30 @@
               <item name="Crow" type="462c0819:PsiDirectoryNode" />
               <item name="wordcards" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="colorfield" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crow" type="462c0819:PsiDirectoryNode" />
               <item name="wordcards" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="colorfield" type="462c0819:PsiDirectoryNode" />
+              <item name="jscolor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crow" type="462c0819:PsiDirectoryNode" />
+              <item name="wordcards" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="wordcards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crow" type="462c0819:PsiDirectoryNode" />
+              <item name="wordcards" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="wordcards" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
@@ -451,8 +487,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3281412" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32917964" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.21910696" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20562293" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.21910696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20562293" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3296582" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3296582" />
@@ -513,9 +549,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wordcards/tools/imageAPI.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordcards/tools/dictionaryAPI.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -737,16 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordcards/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="e#37#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordcards/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -786,16 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordcards/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crow/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -803,17 +816,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wordcards/templates/wordcards/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="65" lean-forward="true" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcards/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="e#37#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/changeProgress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordcards/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordcards/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -822,39 +862,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wordcards/templates/wordcards/card_s1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="46" column="81" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="81" />
+        <state relative-caret-position="550">
+          <caret line="54" column="66" lean-forward="true" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordcards/templates/wordcards/card_s2.html">
+    <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/forget_opt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="49" column="29" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="49" selection-end-column="29" />
+        <state relative-caret-position="255">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/remember_opt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="340">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="e#111#118#1" expanded="true" />
@@ -866,17 +905,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordcards/templates/wordcards/index.html">
+    <entry file="file://$PROJECT_DIR$/wordcards/templates/wordcards/card_s2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="65" lean-forward="true" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+        <state relative-caret-position="546">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/forget_opt.js">
+    <entry file="file://$PROJECT_DIR$/wordcards/static/wordcards/js/next_opt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="408">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
