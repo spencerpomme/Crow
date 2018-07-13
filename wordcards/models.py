@@ -2,16 +2,16 @@
 import datetime
 from django.db import models
 from django.utils import timezone
+from django.utils.safestring import mark_safe
 
 
 class Word(models.Model):
-    word_id = models.IntegerField(primary_key=True)
     word_text = models.CharField(max_length=64)
     word_def = models.TextField()
-    add_date = models.DateTimeField('date added')
+    add_date = models.DateTimeField(auto_now_add=True)
     forget_count = models.IntegerField(default=0)
-    correct_in_row = models.ImageField(default=0)
-    list_display = ('word_id', 'word_text', 'add_date', 'forget_count', 'correct_in_row')
+    correct_in_row = models.IntegerField(default=0)
+    list_display = ('word_text', 'add_date', 'forget_count', 'correct_in_row')
     list_filter = ['forget_count', 'correct_in_row']
     search_fields = ['word_text']
 
@@ -28,11 +28,18 @@ class Word(models.Model):
 
 
 class Image(models.Model):
-    id = models.IntegerField(primary_key=True, unique=True)
     word = models.ForeignKey(Word, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='../media/image')
     caption = models.CharField(max_length=128)
-    list_display = ('id', 'word', 'caption', 'image')
+    list_display = ('word', 'caption', 'image')
     search_fields = ['caption']
+
+    def image_tag(self):
+        if self.image:
+            return mark_safe('<img src="%s" style="width: 45px; height:45px;" />' % self.image.url)
+        else:
+            return 'No Image Found'
+
+    image_tag.short_description = 'Image'
 
 

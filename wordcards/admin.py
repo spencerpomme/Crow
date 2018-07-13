@@ -4,13 +4,16 @@ from .models import Word, Image
 
 
 class WordAdmin(admin.ModelAdmin):
-    fields = ['word_id', 'word_text', 'word_def', 'add_date', 'forget_count', 'correct_in_row']
-    list_display = ('word_text', 'word_def', 'add_date', 'forget_count', 'correct_in_row')
+    fields = ['word_text', 'word_def', 'forget_count', 'correct_in_row']
+    list_display = ('id', 'word_text', 'word_def', 'forget_count', 'correct_in_row', 'add_date')
+    list_filter = ['forget_count']
+    search_fields = ['word_text']
 
 
 class ImageAdmin(admin.ModelAdmin):
-    fields = ['id', 'word', 'caption', 'image']
-    list_display = ('id', 'word', 'caption', 'image')
+    fields = ['word', 'caption', 'image']
+    list_display = ('word', 'caption', 'image', 'image_tag')
+    search_fields = ['caption']
 
 
 admin.site.register(Word, WordAdmin)
