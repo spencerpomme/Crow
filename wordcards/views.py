@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect
+from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
+from django.http import JsonResponse
 from django.template import loader
 from .models import Word, Image
 from .tools import modifyDB
 from pprint import pprint
+
 
 
 def index(request):
@@ -21,31 +24,58 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
 
-
+@csrf_exempt
 def card(request):
     """
     Card view.
     :param request: request
     :return: rendered page
     """
+    init = list(Word.objects.filter(id=1).values())[0]
+
+    context = {
+        'hint': "Some sample hint text serving as a compliment to the image stimulation.",
+        'id': 1,
+        'word_text': init['word_text'],
+        'word_def': init['word_def'],
+    }
+    return render(request, 'wordcards/card_s1.html', context)
+
+
+@csrf_exempt
+def update_word(request):
+    """
+    Only return json
+    :param request:
+    :return:
+    """
     next_id = None
+    print(request)
     try:
-        id = request.POST.get("id", "")
+        id = request.GET.get("id")
+        print("id ->", id)
     except Exception as e:
         print(e)
-
-    if id < 5:
-        next_id = id + 1
+        return redirect("http://www.zhihu.com")
+    if id == "":
+        id = "1" # in DB index start from 1
+    id = int(id)
+    if id > 7:
+        id = 2
+    if id =< 7:
+        next_id = id
         next_word = Word.objects.filter(id=next_id)
         next_word_dict = list(next_word.values())[0]
-        context = {
+        res = {
             'hint': "Some sample hint text serving as a compliment to the image stimulation.",
             'word_text': next_word_dict['word_text'],
             'word_def': next_word_dict['word_def'],
+            'id': next_word_dict['id'],
         }
-        return render(request, 'wordcards/card_s1.html', context)
+        pprint(res)
+        return JsonResponse(res)
     else:
-        return render(request, 'wordcards/finish.html', None)
+        return redirect("error")
 
 
 def card2(request):
@@ -78,3 +108,13 @@ def finish(request):
     :return: rendered page
     """
     pass
+
+
+def error(request):
+    """
+    View of error
+    :param request:
+    :return:
+    """
+    return render(request, 'wordcards/error.html', None)
+

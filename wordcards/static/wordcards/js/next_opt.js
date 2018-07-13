@@ -21,27 +21,39 @@ function next_opt() {
     tag.append("<button type=\"button\" class=\"btn btn-outline-danger\" id=\"forget\" onclick=\"forget_opt()\">Hmm...</button>");
     $("a.card-link").attr("style", "color: white");
     // (3) Thirdly, make new request, get new image, word_text, word_def and hint:
+    let temp = Number($("div.store-word-id").text());
+    $("div.store-word-id").text(temp+1);
     $.ajax({
         cache: false,
-        type: "POST",
-        url: "{% url 'learn' %}",
-        data: {'id': id, 'type': type, 'amount': amount},
+        type: "GET",
+        url: "update",
+        data: {'id': $("div.store-word-id").text()},
         async: true,
-        //<!--需要将csrf_token传到request的header里，否则无法通过验证-->
+        dataType: 'json',
         beforeSend: function (xhr, settings) {
             xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
         },
+        // Replace the corresponding content with newly received ones:
+        success: function (res) {
+            console.log(res);
+            console.log(typeof res);
+            console.log(res.word_text);
+            $("h5#shift-word").text(res.word_text);
+            $("p#shift-def").text(res.word_def);
+            console.log(typeof res.id);
+            console.log("res.id ->", res.id);
+            $("div.store-word-id").text(res.id);
+        }
     })
-    // (4) Fourthly, replace the corresponding content with newly received ones:
 
-    // (5) Lastly, change back text and definition:
+    // (4) Lastly, change back text and definition:
     $("h5#shift-word").attr("style", "display: none");
     $("h5#shift-what").attr("style", "display: block");
     $("p#shift-hint").attr("style", "display: block");
     $("p#shift-def").attr("style", "display: none");
 }
 
-    /*
+/*
     $.ajax({
         cache: false,
         type: "POST",
