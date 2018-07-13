@@ -34,12 +34,4 @@ class Image(models.Model):
     list_display = ('word', 'caption', 'image')
     search_fields = ['caption']
 
-    def image_tag(self):
-        if self.image:
-            return mark_safe('<img src="%s" style="width: 45px; height:45px;" />' % self.image.url)
-        else:
-            return 'No Image Found'
-
-    image_tag.short_description = 'Image'
-
 

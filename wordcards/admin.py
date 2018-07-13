@@ -12,7 +12,7 @@ class WordAdmin(admin.ModelAdmin):
 
 class ImageAdmin(admin.ModelAdmin):
     fields = ['word', 'caption', 'image']
-    list_display = ('word', 'caption', 'image', 'image_tag')
+    list_display = ('word', 'caption', 'image')
     search_fields = ['caption']
 
 
