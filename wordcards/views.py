@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.template import loader
 from .models import Word
 from .tools import modifyDB
+from pprint import pprint
 
 
 def index(request):
@@ -28,7 +29,7 @@ def card(request):
     :return: rendered page
     """
     context = {
-        'word_list_name': "Word List 1",
+        'hint': "People use it to drink all kinds of beverages, and from time to time cultural symbols are printed on it.",
     }
     return render(request, 'wordcards/card_s1.html', context)
 
