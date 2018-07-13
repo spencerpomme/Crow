@@ -1,4 +1,4 @@
-function changeProgress() {
+export function changeProgress() {
     let percent = document.getElementById("progressBar").innerHTML;
     percent = Number(percent.replace("%", ""));
     if (percent < 100) {
