@@ -56,13 +56,19 @@ def update_word(request):
         print("id ->", id)
     except Exception as e:
         print(e)
-        return redirect("http://www.zhihu.com")
+    img_urls = ["../media/image/tumbler.jpg",
+                "../media/image/goblet.jpg",
+                "../media/image/chalice.jpg",
+                "../media/image/mug.jpg",
+                "../media/image/tankard.jpg",
+                "../media/image/crow1.jpg"
+                ]
     if id == "":
         id = "1" # in DB index start from 1
     id = int(id)
     if id > 7:
         id = 2
-    if id =< 7:
+    if id <= 7:
         next_id = id
         next_word = Word.objects.filter(id=next_id)
         next_word_dict = list(next_word.values())[0]
@@ -71,6 +77,7 @@ def update_word(request):
             'word_text': next_word_dict['word_text'],
             'word_def': next_word_dict['word_def'],
             'id': next_word_dict['id'],
+            'img_url': img_urls[id-1],
         }
         pprint(res)
         return JsonResponse(res)

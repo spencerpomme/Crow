@@ -15,4 +15,7 @@ function forget_opt() {
     $("h5#shift-what").attr("style", "display: none");
     $("p#shift-hint").attr("style", "display: none");
     $("p#shift-def").attr("style", "display: block");
+
+    // (3) Modify database:
+
 }
