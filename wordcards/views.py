@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
 from .models import Word, Image
@@ -28,12 +28,24 @@ def card(request):
     :param request: request
     :return: rendered page
     """
-    context = {
-        'hint': "Some sample hint text serving as a compliment to the image stimulation.",
-        'word_text': "mug",
-        'word_def': "test string: word definition placeholder.",
-    }
-    return render(request, 'wordcards/card_s1.html', context)
+    next_id = None
+    try:
+        id = request.POST.get("id", "")
+    except Exception as e:
+        print(e)
+
+    if id < 5:
+        next_id = id + 1
+        next_word = Word.objects.filter(id=next_id)
+        next_word_dict = list(next_word.values())[0]
+        context = {
+            'hint': "Some sample hint text serving as a compliment to the image stimulation.",
+            'word_text': next_word_dict['word_text'],
+            'word_def': next_word_dict['word_def'],
+        }
+        return render(request, 'wordcards/card_s1.html', context)
+    else:
+        return render(request, 'wordcards/finish.html', None)
 
 
 def card2(request):

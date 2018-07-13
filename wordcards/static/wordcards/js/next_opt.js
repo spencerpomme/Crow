@@ -1,7 +1,7 @@
 function next_opt() {
     // Common part of forget_opt() and remember_opt():
     // The 'Next' button of card view state 2 is pressed.
-    
+
     // (1) Firstly, update the progressbar:
     let percent = document.getElementById("progressBar").innerHTML;
     percent = Number(percent.replace("%", ""));
@@ -17,11 +17,21 @@ function next_opt() {
     $("div").remove("#temp-div");
     let tag = $("ul#button-place-marker");
     tag.append("<button type=\"button\" class=\"btn btn-outline-success\" id=\"remember\" onclick=\"remember_opt()\">I know it</button>")
-    tag.append("<div style=\"height:5px\"></div>");
+    tag.append("<div style=\"height:5px\" id='temp-div'></div>");
     tag.append("<button type=\"button\" class=\"btn btn-outline-danger\" id=\"forget\" onclick=\"forget_opt()\">Hmm...</button>");
     $("a.card-link").attr("style", "color: white");
     // (3) Thirdly, make new request, get new image, word_text, word_def and hint:
-
+    $.ajax({
+        cache: false,
+        type: "POST",
+        url: "{% url 'learn' %}",
+        data: {'id': id, 'type': type, 'amount': amount},
+        async: true,
+        //<!--需要将csrf_token传到request的header里，否则无法通过验证-->
+        beforeSend: function (xhr, settings) {
+            xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+        },
+    })
     // (4) Fourthly, replace the corresponding content with newly received ones:
 
     // (5) Lastly, change back text and definition:

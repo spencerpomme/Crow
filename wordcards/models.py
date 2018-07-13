@@ -16,7 +16,7 @@ class Word(models.Model):
     search_fields = ['word_text']
 
     def __str__(self):
-        return self.word_text
+        return "({} {} {})".format(self.word_text, self.correct_in_row, self.forget_count)
 
     def was_published_recently(self):
         now = timezone.now()
