@@ -1,6 +1,7 @@
 function next_opt() {
     // Common part of forget_opt() and remember_opt():
-    // The button of card view state 1 is pressed.
+    // The 'Next' button of card view state 2 is pressed.
+    
     // (1) Firstly, update the progressbar:
     let percent = document.getElementById("progressBar").innerHTML;
     percent = Number(percent.replace("%", ""));
