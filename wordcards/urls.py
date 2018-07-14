@@ -9,4 +9,5 @@ urlpatterns = [
     path('gate/', views.gate, name='gate'),
     path('finish/', views.finish, name='finish'),
     path('error/', views.error, name='error'),
+    path('learn/record/', views.log_record, name='record'),
 ]

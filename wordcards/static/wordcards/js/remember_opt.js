@@ -17,6 +17,16 @@ function remember_opt() {
     $("p#shift-def").attr("style", "display: block");
 
     // (3) Modify database:
-
+    $.ajax({
+        cache: true,
+        type: "POST",
+        url: "record/",
+        data: {
+            'remembered': true,
+            'id': $("div.store-word-id").text()
+        },
+        async: true,
+        dataType: 'json',
+    });
 }
 

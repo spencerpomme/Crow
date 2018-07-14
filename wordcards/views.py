@@ -50,10 +50,10 @@ def update_word(request):
     :return:
     """
     next_id = None
-    print(request)
+    # print(request)
     try:
         id = request.GET.get("id")
-        print("id ->", id)
+        # print("id ->", id)
     except Exception as e:
         print(e)
     img_urls = ["../media/image/tumbler.jpg",
@@ -71,6 +71,7 @@ def update_word(request):
     if id <= 7:
         next_id = id
         next_word = Word.objects.filter(id=next_id)
+        # print(next_word)
         next_word_dict = list(next_word.values())[0]
         res = {
             'hint': "Some sample hint text serving as a compliment to the image stimulation.",
@@ -79,10 +80,32 @@ def update_word(request):
             'id': next_word_dict['id'],
             'img_url': img_urls[id-1],
         }
-        pprint(res)
+        # pprint(res)
         return JsonResponse(res)
     else:
         return redirect("error")
+
+
+@csrf_exempt
+def log_record(request):
+    """
+    Modify learning record.
+    :param request:
+    :return:
+    """
+    remembered = request.POST.get("remembered")
+    id = int(request.POST.get("id"))
+    print("id--->", type(id), id)
+    print("remembered--->", type(remembered), remembered)
+    obj = Word.objects.get(id=id)
+    if remembered == "true":
+        obj.correct_in_row += 1
+    else:
+        obj.correct_in_row = 0
+        obj.forget_count += 1
+    print(obj)
+    obj.save()
+    return render(request, 'wordcards/log.html', None)
 
 
 def card2(request):
